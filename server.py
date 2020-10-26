@@ -43,6 +43,7 @@ class Battlesnake(object):
         # Valid moves are "up", "down", "left", or "right".
         # TODO: Use the information in cherrypy.request.json to decide your next move.
         data = cherrypy.request.json
+        print(data)
         data["you"]["body"] = youToken
         head = youToken[0]
         neck = youToken[1]
